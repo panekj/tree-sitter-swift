@@ -1,15 +1,38 @@
-node_modules
-/src/*
-!/src/scanner.c
-*.swp
-/build
+# Rust artifacts
 Cargo.lock
-/target/*
+target/
+
+# Node artifacts
+build/
+prebuilds/
+node_modules/
+*.tgz
+
+# Swift artifacts
+.build/
+
+# Go artifacts
+go.sum
+_obj/
+
+# Python artifacts
+.venv/
+dist/
+*.egg-info
+*.whl
+
+# C artifacts
 *.a
-*.dylib
 *.so
+*.so.*
+*.dylib
+*.dll
+*.pc
+
+# Example dirs
+/examples/*/
+
+# Grammar volatiles
+*.wasm
+*.obj
 *.o
-bindings/c/*.h
-bindings/c/tree-sitter-*.pc
-.vscode/
-/.build
